@@ -1,4 +1,5 @@
-UUUUUUUUUUUUUUUUUH
+Ok this is my first time writing a readme.md file
+i can do this...
 
 
-what is u doing here im working on it rn
+<b> Welcome to The resent Launcher! </b>
