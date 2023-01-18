@@ -14,11 +14,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: cadetblue;
+    background: black;
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -213,9 +213,9 @@ body {
 
 .btn:nth-child(3)::before,
 .btn:nth-child(3)::after {
-    background: #1eff45;
-    box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
-        0 0 60px #1eff45;
+    background: crimson;
+    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
+        0 0 60px crimson;
 }
 
 .btn:nth-child(4)::before,
