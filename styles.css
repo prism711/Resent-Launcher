@@ -23,6 +23,17 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+.logo {
+	position: absolute;
+	width: 50px;
+	length: 50px;
+	background-size: 100%;
+	background-image: url(favicon.ico);
+	left:20%;
+	top: 18%;
+	
+}
+
 
 #quickstart {
     position: ststic;
@@ -48,6 +59,377 @@ body {
     text-align: center;
 }
 
+.bts {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 25px 75px;
+    margin: 30px;
+}
+
+.bts a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: white;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+.bts:hover a {
+    letter-spacing: 3px;
+}
+
+.bts a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(40deg) translateX(0);
+    transition: all 0.5s ease-out;
+}
+
+.bts:hover a::before {
+    transform: skewX(40deg) translateX(200%);
+}
+
+.bts::before,
+.bts::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: orangered;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.bts::before {
+    bottom: -5px;
+}
+
+.bts::after {
+    top: -5px;
+}
+
+.bts:hover::before,
+.bts:hover::after {
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.3s;
+}
+
+.bts:hover::before {
+    bottom: 0;
+}
+
+.bts:hover::after {
+    top: 0;
+}
+
+.bts:nth-child(1)::before,
+.bts:nth-child(1)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.bts:nth-child(2)::before,
+.bts:nth-child(2)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.bts:nth-child(3)::before,
+.bts:nth-child(3)::after {
+    background: crimson;
+    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
+        0 0 60px crimson;
+}
+
+.bts:nth-child(4)::before,
+.bts:nth-child(4)::after {
+    background: #fffa65;
+    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
+        0 0 60px #fffa65;
+}
+.btb {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 25px 75px;
+    margin: 30px;
+}
+
+.btb a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: white;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+.btb:hover a {
+    letter-spacing: 3px;
+}
+
+.btb a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(40deg) translateX(0);
+    transition: all 0.5s ease-out;
+}
+
+.btb:hover a::before {
+    transform: skewX(40deg) translateX(200%);
+}
+
+.btb::before,
+.btb::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: crimson;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.btb::before {
+    bottom: -5px;
+}
+
+.btb::after {
+    top: -5px;
+}
+
+.btb:hover::before,
+.btb:hover::after {
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.3s;
+}
+
+.btb:hover::before {
+    bottom: 0;
+}
+
+.btb:hover::after {
+    top: 0;
+}
+
+.btb:nth-child(1)::before,
+.btb:nth-child(1)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btb:nth-child(2)::before,
+.btb:nth-child(2)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btb:nth-child(3)::before,
+.btb:nth-child(3)::after {
+    background: crimson;
+    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
+        0 0 60px crimson;
+}
+
+.btb:nth-child(4)::before,
+.btb:nth-child(4)::after {
+    background: #fffa65;
+    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
+        0 0 60px #fffa65;
+}
+.btc {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 25px 75px;
+    margin: 30px;
+}
+
+.btc a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: white;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+.btc:hover a {
+    letter-spacing: 3px;
+}
+
+.btc a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(40deg) translateX(0);
+    transition: all 0.5s ease-out;
+}
+
+.btc:hover a::before {
+    transform: skewX(40deg) translateX(200%);
+}
+
+.btc::before,
+.btc::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.btc::before {
+    bottom: -5px;
+}
+
+.btc::after {
+    top: -5px;
+}
+
+.btc:hover::before,
+.btc:hover::after {
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.3s;
+}
+
+.btc:hover::before {
+    bottom: 0;
+}
+
+.btc:hover::after {
+    top: 0;
+}
+
+.btc:nth-child(1)::before,
+.btc:nth-child(1)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btc:nth-child(2)::before,
+.btc:nth-child(2)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btc:nth-child(3)::before,
+.btc:nth-child(3)::after {
+    background: crimson;
+    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
+        0 0 60px crimson;
+}
+
+.btc:nth-child(4)::before,
+.btc:nth-child(4)::after {
+    background: #fffa65;
+    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
+        0 0 60px #fffa65;
+}
+.gradient-text {
+	position: absolute;
+	top:30%;
+  background: linear-gradient(to right, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .btn {
     position: relative;
     display: inline-block;
@@ -79,16 +461,6 @@ body {
     backdrop-filter: blur(15px);
     transition: all 0.3s ease-in-out;
 }
-.logo {
-	position: absolute;
-	width: 50px;
-	length: 50px;
-	background-size: 100%;
-	background-image: url(favicon.ico);
-	left:20%;
-	top: 18%;
-	
-}
 
 .btn:hover a {
     letter-spacing: 3px;
@@ -119,7 +491,7 @@ body {
     width: 30px;
     height: 10px;
     border-radius: 10px;
-    background: #9e4444;
+    background: skyblue;
     transition: all 0.4s ease-in-out;
     transition-delay: 0s;
 }
@@ -150,23 +522,23 @@ body {
 
 .btn:nth-child(1)::before,
 .btn:nth-child(1)::after {
-    background: #2bd2ff;
-    box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-        0 0 60px #2bd2ff;
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
 }
 
 .btn:nth-child(2)::before,
 .btn:nth-child(2)::after {
-    background: #2bd2ff;
-    box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-        0 0 60px #2bd2ff;
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
 }
 
 .btn:nth-child(3)::before,
 .btn:nth-child(3)::after {
-    background: crimson;
-    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
-        0 0 60px crimson;
+    background: rebeccapurple;
+    box-shadow: 0 0 5px rebeccapurple, 0 0 15px rebeccapurple, 0 0 30px rebeccapurple,
+        0 0 60px rebeccapurple;
 }
 
 .btn:nth-child(4)::before,
@@ -175,3 +547,4 @@ body {
     box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
         0 0 60px #fffa65;
 }
+
