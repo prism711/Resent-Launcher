@@ -354,7 +354,7 @@ body {
     width: 30px;
     height: 10px;
     border-radius: 10px;
-    background: skyblue;
+    background: chartreuse;
     transition: all 0.4s ease-in-out;
     transition-delay: 0s;
 }
@@ -399,9 +399,9 @@ body {
 
 .btc:nth-child(3)::before,
 .btc:nth-child(3)::after {
-    background: crimson;
-    box-shadow: 0 0 5px crimson, 0 0 15px crimson, 0 0 30px crimson,
-        0 0 60px crimson;
+    background: ch;
+    box-shadow: 0 0 5px chartreuse, 0 0 15px chartreuse, 0 0 30px chartreuse,
+        0 0 60px chartreuse;
 }
 
 .btc:nth-child(4)::before,
@@ -430,6 +430,124 @@ body {
     background-position: 0% 50%;
   }
 }
+.btt {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 25px 75px;
+    margin: 30px;
+}
+
+.btt a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: white;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+.btt:hover a {
+    letter-spacing: 3px;
+}
+
+.btt a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(40deg) translateX(0);
+    transition: all 0.5s ease-out;
+}
+
+.btt:hover a::before {
+    transform: skewX(40deg) translateX(200%);
+}
+
+.btt::before,
+.btt::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.btt::before {
+    bottom: -5px;
+}
+
+.btt::after {
+    top: -5px;
+}
+
+.btt:hover::before,
+.btt:hover::after {
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.3s;
+}
+
+.btt:hover::before {
+    bottom: 0;
+}
+
+.btt:hover::after {
+    top: 0;
+}
+
+.btt:nth-child(1)::before,
+.btt:nth-child(1)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btt:nth-child(2)::before,
+.btt:nth-child(2)::after {
+    background: darkgoldenrod;
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
+        0 0 60px darkgoldenrod;
+}
+
+.btt:nth-child(3)::before,
+.btt:nth-child(3)::after {
+    background: rebeccapurple;
+    box-shadow: 0 0 5px rebeccapurple, 0 0 15px rebeccapurple, 0 0 30px rebeccapurple,
+        0 0 60px rebeccapurple;
+}
+
+.btt:nth-child(4)::before,
+.btt:nth-child(4)::after {
+    background: #fffa65;
+    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
+        0 0 60px #fffa65;
+}
+
 .btn {
     position: relative;
     display: inline-block;
@@ -491,7 +609,7 @@ body {
     width: 30px;
     height: 10px;
     border-radius: 10px;
-    background: skyblue;
+    background: radial-gradient(red,orange,yellow);
     transition: all 0.4s ease-in-out;
     transition-delay: 0s;
 }
@@ -547,4 +665,3 @@ body {
     box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
         0 0 60px #fffa65;
 }
-
