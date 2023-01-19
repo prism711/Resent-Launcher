@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://arc.io/widget.min.js#AcyRg5M7"></script>
+    <script async src="https://arc.io/widget.min.js#AcyRg5M7">
+		</script>
     <title>Resent Launcher</title>
     <meta charset="application/javascript" />
     <!--meta content="IMAGE" property="og:image"/>-->
@@ -11,36 +12,21 @@
 		<script type="text/javascript" src="webby.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
-  <body id="game_frame">
-    <div class="stuff" id="changelog">
-      <h3>Beta</h3>
-      <div>
-        <br/>
-        <br />
-        <p>Lacks some features, but has others</p>
-        <br />
-       <button onclick="Start();" class="btn"><a href="/1.8/beta.html">Launch</a></button>
-       </div>
-    </div>
-
+</div>
+	      <img class="sky" src="sky.jpg" alt="skyy">
+				<img class="logo" src="favicon.ico" alt="favicon">
     <div class="stuff" id="quickstart">
-      <h3>Stable Build</h3>
-      <br/>
-      <br/>
-      <p>- Plenty of features, lacks some </p>
-<button onclick="Start();" class="btn"><a href="/1.8/index.html">Launch</a></button>
-    </div>
-
     <div id="Selection">
       <div background-color: light-grey;>
         <h1>Resent Launcher</h1>
-        <h3>Select your version</h3>
-				<button onclick="Start();" class="btn"><a href="/1.8/serverlist.txt">Serverlist</a></button>
-        <br/>
+				<button onclick="Start();" class="btn"><a href="/1.8/serverlist.txt">Serverlist</a></button>  
+				<button onclick="Start();" class="btn"><a href="/1.8/index.html">Launch Stable Build</a></button>
+				<button onclick="Start();" class="btn"><a href="/1.8/beta.html">Launch Beta</a></button>
+      
       <div class="container">
       </div>
     </div>
+	</div>
     <script type="text/javascript">
       if (document.location.href.startsWith("file:")) {
         alert(
