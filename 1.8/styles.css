@@ -14,11 +14,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: red;
+    background: black;
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
