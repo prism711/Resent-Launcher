@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<h1 class="gradient-text">Select Your Version:</h1>
+    <script async src="https://arc.io/widget.min.js#AcyRg5M7">
+		</script>
+		<div id="introduction">
+  <title>Resent Launcher</title>
+</div>
+    <title>Resent Launcher</title>
+    <meta charset="application/javascript" />
+    <!--meta content="IMAGE" property="og:image"/>-->
+    <meta content="Resent Client launcher. Switch between Stable and Development Build with ease." property="og:description" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+				<button onclick="Start();" class="btn"><a href="/1.8/serverlist.html">Serverlist</a></button>  
+				<button onclick="Start();" class="bts"><a href="/1.8/index.html">Launch Legacy</a></button>
+				<button onclick="Start();" class="btb"><a href="/1.8/beta.html">Launch 3.3.2</a></button>
+	<button onclick="Start();" class="btc"><a href="/1.8/credits.html">Credits</a></button>
+	
+    <script type="text/javascript">
+      if (document.location.href.startsWith("file:")) {
+        alert(
+          "You cannot 'open' this file in your browser, the code doesn't work. Upload this folder to your HTTP(s) server and access it via the internet to launch the stable-download game. This is not a bug, please read the documentation. Theres also a tutorial online by Four999"
+        );
+      } else {
+        function Start() {
+            document.getElementById("Selection").style.display = "none";
+            document.getElementById("changelog").style.display = "none";
+            document.getElementById("quickstart").style.display = "none";
+            window.eaglercraftXOpts = {
+						container: "game_frame",
+						assetsURI: "assets.epk",
+						localesURI: "lang/",
+						servers: [
+							/* example: { addr: "ws://localhost:8081/", name: "Local test server" } */              {addr: "wss://blobcraft.minecraft.pe", name: "BlobCraft"}
+
+						]
+					};
+            main();
+        }
+      }
+    </script>
+  </body>
+</html>

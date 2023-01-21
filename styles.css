@@ -151,16 +151,16 @@ body {
 
 .bts:nth-child(1)::before,
 .bts:nth-child(1)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .bts:nth-child(2)::before,
 .bts:nth-child(2)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .bts:nth-child(3)::before,
@@ -172,9 +172,9 @@ body {
 
 .bts:nth-child(4)::before,
 .bts:nth-child(4)::after {
-    background: #fffa65;
-    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
-        0 0 60px #fffa65;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 .btb {
     position: relative;
@@ -268,16 +268,16 @@ body {
 
 .btb:nth-child(1)::before,
 .btb:nth-child(1)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btb:nth-child(2)::before,
 .btb:nth-child(2)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btb:nth-child(3)::before,
@@ -289,9 +289,9 @@ body {
 
 .btb:nth-child(4)::before,
 .btb:nth-child(4)::after {
-    background: #fffa65;
-    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
-        0 0 60px #fffa65;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 .btc {
     position: relative;
@@ -354,7 +354,7 @@ body {
     width: 30px;
     height: 10px;
     border-radius: 10px;
-    background: chartreuse;
+    background: sienna;
     transition: all 0.4s ease-in-out;
     transition-delay: 0s;
 }
@@ -385,35 +385,35 @@ body {
 
 .btc:nth-child(1)::before,
 .btc:nth-child(1)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btc:nth-child(2)::before,
 .btc:nth-child(2)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btc:nth-child(3)::before,
 .btc:nth-child(3)::after {
     background: ch;
-    box-shadow: 0 0 5px chartreuse, 0 0 15px chartreuse, 0 0 30px chartreuse,
-        0 0 60px chartreuse;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btc:nth-child(4)::before,
 .btc:nth-child(4)::after {
-    background: #fffa65;
-    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
-        0 0 60px #fffa65;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 .gradient-text {
 	position: absolute;
 	top:30%;
-  background: linear-gradient(to right, white, white);
+  background: linear-gradient(to right, red, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 5s linear infinite;
@@ -522,16 +522,16 @@ body {
 
 .btt:nth-child(1)::before,
 .btt:nth-child(1)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btt:nth-child(2)::before,
 .btt:nth-child(2)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btt:nth-child(3)::before,
@@ -543,9 +543,9 @@ body {
 
 .btt:nth-child(4)::before,
 .btt:nth-child(4)::after {
-    background: #fffa65;
-    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
-        0 0 60px #fffa65;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btn {
@@ -640,16 +640,16 @@ body {
 
 .btn:nth-child(1)::before,
 .btn:nth-child(1)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btn:nth-child(2)::before,
 .btn:nth-child(2)::after {
-    background: darkgoldenrod;
-    box-shadow: 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 30px darkgoldenrod,
-        0 0 60px darkgoldenrod;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
 }
 
 .btn:nth-child(3)::before,
@@ -661,7 +661,17 @@ body {
 
 .btn:nth-child(4)::before,
 .btn:nth-child(4)::after {
-    background: #fffa65;
-    box-shadow: 0 0 5px #fffa65, 0 0 15px #fffa65, 0 0 30px #fffa65,
-        0 0 60px #fffa65;
+    background: sienna;
+    box-shadow: 0 0 5px sienna, 0 0 15px sienna, 0 0 30px sienna,
+        0 0 60px sienna;
+}
+body {
+  background-color: black;
+}
+
+#introduction {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
 }
