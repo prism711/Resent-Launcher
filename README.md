@@ -8,9 +8,7 @@ The legacy build is the version of Resent Client that were before the website go
 This used to be the "development" build, but the bugs have been fixed soooooo ywah.
 
 ## 1.5 build?
-im not doing it.
-you: "oh but why?"
-Me: Im lazy, and its pretty much uuuhhhhhhh... OBSOLETE at this point.
+im not doing it. And before you ask "oh but why not?", IM TOO LAZY AND 1.5 IS NO LONGER MAINSTREAM
 
 ## Credits
 ### 90% of the Work
