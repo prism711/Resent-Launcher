@@ -1,129 +1,87 @@
-.glow-button {
-    --button-background: #09041e;
-    --button-color: #fff;
-    --button-shadow: rgba(33, 4, 104, 0.2);
-    --button-shine-left: rgba(120, 0, 245, 0.5);
-    --button-shine-right: rgba(200, 148, 255, 0.65);
-    --button-glow-start: #B000E8;
-    --button-glow-end: #009FFD;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 11px;
-    position: relative;
-    line-height: 24px;
-    cursor: pointer;
-    color: var(--button-color);
-    padding: 0;
-    margin: 0;
-    background: none;
-    z-index: 1;
-    box-shadow: 0 8px 20px var(--button-shadow);
+body
+{
+  margin:0;
+  padding:0;
+  background:#262626;
+}
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff000;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
   }
-  .glow-button .gradient {
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    transform: scaleY(1.02) scaleX(1.005) rotate(-0.35deg);
+  100%
+  {
+    transform:rotate(360deg);
   }
-  .glow-button .gradient:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transform: scale(1.05) translateY(-44px) rotate(0deg) translateZ(0);
-    padding-bottom: 100%;
-    border-radius: 50%;
-    background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
-    -webkit-animation: rotate linear 2s infinite;
-            animation: rotate linear 2s infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
   }
-  .glow-button span {
-    z-index: 1;
-    position: relative;
-    display: block;
-    padding: 10px 0;
-    width: 132px;
-    border-radius: inherit;
-    background-color: var(--button-background);
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  100%
+  {
+    transform:rotate(405deg);
   }
-  .glow-button span:before {
-    content: "";
-    position: absolute;
-    left: -16px;
-    top: -16px;
-    transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: var(--button-glow, transparent);
-    opacity: var(--button-glow-opacity, 0);
-    transition: opacity var(--button-glow-duration, 0.5s);
-    filter: blur(20px);
-  }
-  .glow-button:hover {
-    --button-glow-opacity: 1;
-    --button-glow-duration: .25s;
-  }
-  
-  @-webkit-keyframes rotate {
-    to {
-      transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
-    }
-  }
-  
-  @keyframes rotate {
-    to {
-      transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
-    }
-  }
-  html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  * {
-    box-sizing: inherit;
-  }
-  *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    font-family: "Inter", Arial;
-    justify-content: center;
-    align-items: center;
-    background-color: #020112;
-    overflow: hidden;
-  }
-  body:before {
-    content: "";
-    position: absolute;
-    inset: 40% -60% 0 -60%;
-    background-image: radial-gradient(ellipse at bottom, #1D0559 0%, #020112 50%);
-    opacity: 0.4;
-  }
-  body .twitter {
-    position: fixed;
-    display: block;
-    right: 12px;
-    bottom: 12px;
-  }
-  body .twitter svg {
-    width: 32px;
-    height: 32px;
-    fill: #fff;
-  }
-  
+}
