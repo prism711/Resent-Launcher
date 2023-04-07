@@ -9,7 +9,7 @@
 }
 body {
     position: relative;
-	  background: black;
+	  background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ body {
     font-family: "Inter", Arial;
     justify-content: center;
     align-items: center;
-    background-color: #020112;
+    background-color: white;
     overflow: hidden;
   }
   body:before {
