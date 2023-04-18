@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Number of People on the Website</title>
+    <title>Visitor Counter</title>
     <script>
       window.onload = function() {
-        var count = 0;
-        var counter = document.getElementById("counter");
-        setInterval(function() {
-          count++;
-          counter.innerHTML = count;
-        }, 1000); // Update the count every second
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'counter.php', true);
+        xhr.send();
       };
     </script>
   </head>
   <body>
-    <h1>Number of People on the Website:</h1>
-    <p id="counter">0</p>
+    <h1>Welcome to my website!</h1>
+    <p>Number of visitors: <?php echo file_get_contents("count.txt"); ?></p>
   </body>
 </html>
