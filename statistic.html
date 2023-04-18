@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number of People on the Website</title>
+    <script>
+      window.onload = function() {
+        var count = 0;
+        var counter = document.getElementById("counter");
+        setInterval(function() {
+          count++;
+          counter.innerHTML = count;
+        }, 1000); // Update the count every second
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Number of People on the Website:</h1>
+    <p id="counter">0</p>
+  </body>
+</html>
