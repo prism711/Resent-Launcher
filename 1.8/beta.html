@@ -342,36 +342,26 @@
 				<!--everything breaks if u remove this and i dont feel like changing the functions in here to fix it-->
 				<p class="ratio" ></p>
 				<img id="mojang" src="logo.svg">
-				<style>
-					mojang {
-  padding: 50px; 
-}
-mojang {
-  width: 100px;
-  height: 100px;
-  background-color: #0CB1C4;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  /* this should rotate idk */
-
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-</style>
-				
 				<h2 id="clientversion">3.6</h2>
 				<p id="progresstext">0%</p>
 				<div id="meter">
 					<span style="width: 0%" id="progress"></span>
+					<style>
+						mojang{
+							.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+						}
+					</style>
 				</div>
 
 				
